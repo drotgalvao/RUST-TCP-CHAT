@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  client-1:
+    container_name: rust-client-1
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    environment:
+      - SERVER_ADDRESS=server:8080
+    depends_on:
+      - server
+
+  client-2:
+    container_name: rust-client-2
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    environment:
+      - SERVER_ADDRESS=server:8080
+    depends_on:
+      - server
+
+  server:
+    container_name: rust-server
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    restart: unless-stopped
