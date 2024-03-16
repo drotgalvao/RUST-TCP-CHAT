@@ -18,10 +18,25 @@ The project is divided into two main components:
 
 ### Useful Rust Commands
 
-- **Install Rust 1.63.0**: `rustup toolchain install 1.63.0`
-- **Set Default Rust Version**: `rustup default 1.63.0`
-- **Check Rust Version**: `rustc --version`
-- **Set Rust Version for Directory**: `rustup override set 1.63.0`
+- **Install Rust 1.63.0:**
+  ```sh
+  rustup toolchain install 1.63.0
+  ```
+
+- **Set Default Rust Version:**
+  ```sh
+  rustup default 1.63.0
+  ```
+
+- **Check Rust Version:**
+  ```sh
+  rustc --version
+  ```
+
+- **Set Rust Version for Directory:**
+  ```sh
+  rustup override set 1.63.0
+  ```
 
 ### Installation
 
@@ -34,7 +49,7 @@ The project is divided into two main components:
 2. Change into the project directory:
 
    ```sh
-   cd directory
+   cd RUST-TCP-CHAT
    ```
 
 3. Build the client and server Docker images using Docker Compose:
