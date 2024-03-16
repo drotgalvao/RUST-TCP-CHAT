@@ -28,7 +28,7 @@ The project is divided into two main components:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/...
+   [git clone https://github.com/...](https://github.com/drotgalvao/RUST-TCP-CHAT.git)
    ```
 
 2. Change into the project directory:
